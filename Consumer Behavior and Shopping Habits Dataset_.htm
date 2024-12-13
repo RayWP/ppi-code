@@ -1,0 +1,192 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Consumer Behavior and Shopping Habits Dataset: | Kaggle</title>
+  <meta charset="utf-8" />
+    <meta name="robots" content="index, follow" />
+  <meta name="description" content="E-Commerce Transaction Trends: A Comprehensive Dataset:" />
+    <meta name="keywords" content="business,tabular,retail and shopping,data visualization,exploratory data analysis,e-commerce services" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+  <meta name="theme-color" content="#008ABC" />
+  <script nonce="7DGSSLTdHhHsEILLYgxPPA==" type="text/javascript">
+    window["pageRequestStartTime"] = 1734078541134;
+    window["pageRequestEndTime"] = 1734078541247;
+    window["initialPageLoadStartTime"] = new Date().getTime();
+  </script>
+  <script nonce="7DGSSLTdHhHsEILLYgxPPA==" id="gsi-client" src="https://accounts.google.com/gsi/client" async defer></script>
+  <script nonce="7DGSSLTdHhHsEILLYgxPPA==">window.KAGGLE_JUPYTERLAB_PATH = "/static/assets/jupyterlab-v4/jupyterlab-index-afd16105b016b105b019.html";</script>
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin="anonymous" /><link rel="preconnect" href="https://stats.g.doubleclick.net" /><link rel="preconnect" href="https://storage.googleapis.com" /><link rel="preconnect" href="https://apis.google.com" />
+    <link href="/static/images/favicon.ico" rel="shortcut icon" type="image/x-icon" id="dynamic-favicon" />
+  <link rel="manifest" href="/static/json/manifest.json" crossorigin="use-credentials">
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i&display=swap"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/css2?family=Google+Symbols:FILL@0..1&display=block"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i&display=swap"
+    rel="stylesheet" media="print" id="async-google-font-1" />
+  <link href="https://fonts.googleapis.com/css2?family=Google+Symbols:FILL@0..1&display=block"
+    rel="stylesheet" media="print" id="async-google-font-2" />
+  <script nonce="7DGSSLTdHhHsEILLYgxPPA==" type="text/javascript">
+    const styleSheetIds = ["async-google-font-1", "async-google-font-2"];
+    styleSheetIds.forEach(function (id) {
+      document.getElementById(id).addEventListener("load", function() {
+        this.media = "all";
+      });
+    });
+  </script>
+
+
+    <link rel="canonical" href="https://www.kaggle.com/datasets/zeesolver/consumer-behavior-and-shopping-habits-dataset" />
+    <link rel="stylesheet" type="text/css" href="/static/assets/vendor.css?v=dne" />
+    <link rel="stylesheet" type="text/css" href="/static/assets/app.css?v=5bf3c9f45d06b890b0a5" />
+
+  
+    
+ 
+      <script nonce="7DGSSLTdHhHsEILLYgxPPA==">
+        try{(function(a,s,y,n,c,h,i,d,e){d=s.createElement("style");
+        d.appendChild(s.createTextNode(""));s.head.appendChild(d);d=d.sheet;
+        y=y.map(x => d.insertRule(x + "{ opacity: 0 !important }"));
+        h.start=1*new Date;h.end=i=function(){y.forEach(x => x<d.cssRules.length ? d.deleteRule(x) : {})};
+        (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+        })(window,document,['.site-header-react__nav'],'dataLayer',2000,{'GTM-52LNT9S':true});}catch(ex){}
+    </script>
+    <script nonce="7DGSSLTdHhHsEILLYgxPPA==">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-T7QHS60L4Q', {
+            'optimize_id': 'GTM-52LNT9S',
+            'displayFeaturesTask': null,
+            'send_page_view': false,
+            'content_group1': 'Datasets'
+        });
+    </script>
+    <script nonce="7DGSSLTdHhHsEILLYgxPPA==" async src="https://www.googletagmanager.com/gtag/js?id=G-T7QHS60L4Q"></script>
+
+  
+    
+    <meta property="og:url" content="https://www.kaggle.com/datasets/zeesolver/consumer-behavior-and-shopping-habits-dataset" />
+    <meta property="og:title" content="Consumer Behavior and Shopping Habits Dataset:" />
+    <meta property="og:description" content="E-Commerce Transaction Trends: A Comprehensive Dataset:" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://storage.googleapis.com/kaggle-datasets-images/3881446/6740173/ff6d2f2465a578b6b1d34ff7f32a1d25/dataset-card.jpg?t=2023-10-19-13-55-42" />
+    <meta property="fb:app_id" content="2665027677054710" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@kaggledatasets" />
+        <meta name="twitter:creator" content="@solverZee" />
+
+
+  <meta name="twitter:site" content="@Kaggle" /> 
+  
+    
+            <script nonce="7DGSSLTdHhHsEILLYgxPPA==" type="application/ld+json">{"@context":"http://schema.org/","@type":"Dataset","name":"Consumer Behavior and Shopping Habits Dataset:","description":"###### Context: \nThe Consumer Behavior and Shopping Habits Dataset provides comprehensive insights into consumers' preferences, tendencies, and patterns during their shopping experiences. This dataset encompasses a diverse range of variables, including demographic information, purchase history, product preferences, shopping frequency, and online/offline shopping behavior. With this rich collection of data, analysts and researchers can delve into the intricacies of consumer decision-making processes, aiding businesses in crafting targeted marketing strategies, optimizing product offerings, and enhancing overall customer satisfaction.\n\n###### Content:\n\nThe Consumer Behavior and Shopping Habits Dataset provides a detailed overview of consumer preferences and purchasing behaviors. It includes demographic information, purchase history, product preferences, and preferred shopping channels (online or offline). This dataset is essential for businesses aiming to tailor their strategies to meet customer needs and enhance their shopping experience, ultimately driving sales and loyalty.\n\n###### Dataset Glossary (Column-wise)\n\n**Customer ID:**A unique identifier assigned to each individual customer, facilitating tracking and analysis of their shopping behavior over time.\n\n**Age:** The age of the customer, providing demographic information for segmentation and targeted marketing strategies.\n\n**Gender:** The gender identification of the customer, a key demographic variable influencing product preferences and purchasing patterns.\n\n**Item Purchased:** The specific product or item selected by the customer during the transaction.\n\n**Category:** The broad classification or group to which the purchased item belongs (e.g., clothing, electronics, groceries).\n\n**Purchase Amount (USD):** The monetary value of the transaction, denoted in United States Dollars (USD), indicates the cost of the purchased item(s).\n\n**Location:** The geographical location where the purchase was made, offering insights into regional preferences and market trends.\n\n**Size:** The size specification (if applicable) of the purchased item, relevant for apparel, footwear, and certain consumer goods.\n\n**Color:** The color variant or choice associated with the purchased item, influencing customer preferences and product availability.\n\n**Season:** The seasonal relevance of the purchased item (e.g., spring, summer, fall, winter), impacting inventory management and marketing strategies.\n\n**Review Rating:** A numerical or qualitative assessment provided by the customer regarding their satisfaction with the purchased item.\n\n**Subscription Status**: Indicates whether the customer has opted for a subscription service, offering insights into their level of loyalty and potential for recurring revenue.\n\n**Shipping Type:** Specifies the method used to deliver the purchased item (e.g., standard shipping, express delivery), influencing delivery times and costs.\n\n**Discount Applied:** Indicates if any promotional discounts were applied to the purchase, shedding light on price sensitivity and promotion effectiveness.\n\n**Promo Code Used:** Notes whether a promotional code or coupon was utilized during the transaction, aiding in the evaluation of marketing campaign success.\n\n**Previous Purchases:** Provides information on the number or frequency of prior purchases made by the customer, contributing to customer segmentation and retention strategies.\n\n**Payment Method:** Specifies the mode of payment employed by the customer (e.g., credit card, cash), offering insights into preferred payment options.\n\n**Frequency of Purchases:** Indicates how often the customer engages in purchasing activities, a critical metric for assessing customer loyalty and lifetime value.\n\n**Acknowledgment**\n\nSpecial thanks to Sir Sourav Banerjee Associate Data Scientist at CogniTensor\n\nKolkata, West Bengal, India\n\n","url":"https://www.kaggle.com/zeesolver/consumer-behavior-and-shopping-habits-dataset","version":1,"keywords":["subject, people and society, business","data type, tabular","subject, people and society, people, retail and shopping","technique, data visualization","technique, exploratory data analysis","subject, people and society, business, e-commerce services"],"license":{"@type":"CreativeWork","name":"CC0: Public Domain","url":"https://creativecommons.org/publicdomain/zero/1.0/"},"identifier":["3881446"],"includedInDataCatalog":{"@type":"DataCatalog","name":"Kaggle","url":"https://www.kaggle.com"},"creator":{"@type":"Person","name":"Shahzad Aslam","url":"https://www.kaggle.com/zeesolver","image":"https://storage.googleapis.com/kaggle-avatars/thumbnails/12598114-kg.jpeg?t=2024-11-21-10-51-58"},"distribution":[{"@type":"DataDownload","requiresSubscription":true,"encodingFormat":"zip","fileFormat":"zip","contentUrl":"https://www.kaggle.com/datasets/zeesolver/consumer-behavior-and-shopping-habits-dataset/download?datasetVersionNumber=1","contentSize":"149850 bytes"}],"commentCount":3,"dateModified":"2023-10-19T13:36:26.673Z","discussionUrl":"https://www.kaggle.com/zeesolver/consumer-behavior-and-shopping-habits-dataset/discussion","alternateName":"E-Commerce Transaction Trends: A Comprehensive Dataset:","isAccessibleForFree":true,"thumbnailUrl":"https://storage.googleapis.com/kaggle-datasets-images/3881446/6740173/ff6d2f2465a578b6b1d34ff7f32a1d25/dataset-card.jpg?t=2023-10-19-13-55-42","interactionStatistic":[{"@type":"InteractionCounter","interactionType":"http://schema.org/CommentAction","userInteractionCount":3},{"@type":"InteractionCounter","interactionType":"http://schema.org/DownloadAction","userInteractionCount":25645},{"@type":"InteractionCounter","interactionType":"http://schema.org/ViewAction","userInteractionCount":122876},{"@type":"InteractionCounter","interactionType":"http://schema.org/LikeAction","userInteractionCount":222}]}</script>
+        
+
+  
+    
+
+  
+    
+
+
+    <script nonce="7DGSSLTdHhHsEILLYgxPPA==">window['useKaggleAnalytics'] = true;</script>
+
+  <script id="gapi-target" nonce="7DGSSLTdHhHsEILLYgxPPA==" src="https://apis.google.com/js/api.js" defer
+    async></script>
+  <script nonce="7DGSSLTdHhHsEILLYgxPPA==" src="/static/assets/runtime.js?v=f6363cca6c591a022822"></script>
+  <script nonce="7DGSSLTdHhHsEILLYgxPPA==" src="/static/assets/vendor.js?v=55af743e3678f4d83805"></script>
+  <script nonce="7DGSSLTdHhHsEILLYgxPPA==" src="/static/assets/app.js?v=1cc3311a65c291837044"></script>
+    <script nonce="7DGSSLTdHhHsEILLYgxPPA==" type="text/javascript">
+      window.kaggleStackdriverConfig = {
+        key: 'AIzaSyA4eNqUdRRskJsCZWVz-qL655Xa5JEMreE',
+        projectId: 'kaggle-161607',
+        service: 'web-fe',
+        version: 'ci',
+        userId: '5275335'
+      }
+    </script>
+</head>
+<body>
+<main>
+    
+
+
+
+
+
+<div id="site-container"></div>
+
+<div id="site-body" class="hide">
+    
+
+
+<script nonce="7DGSSLTdHhHsEILLYgxPPA==" type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    "HTML-CSS": {
+    preferredFont: "TeX",
+    availableFonts: ["STIX", "TeX"],
+    linebreaks: {
+    automatic: true
+    },
+    EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+    inlineMath: [["\\(", "\\)"], ["\\\\(", "\\\\)"]],
+    displayMath: [["$$", "$$"], ["\\[", "\\]"]],
+    processEscapes: true,
+    ignoreClass: "tex2jax_ignore|dno"
+    },
+    TeX: {
+    noUndefined: {
+    attributes: {
+    mathcolor: "red",
+    mathbackground: "#FFEEEE",
+    mathsize: "90%"
+    }
+    }
+    },
+    Macros: {
+    href: "{}"
+    },
+    skipStartupTypeset: true,
+    messageStyle: "none",
+    extensions: ["Safe.js"],
+    });
+</script>
+<script type="text/javascript" nonce="7DGSSLTdHhHsEILLYgxPPA==">
+  window.addEventListener("DOMContentLoaded", () => {
+    const head = document.getElementsByTagName("head")[0];
+    const lib = document.createElement("script");
+    lib.type = "text/javascript";
+    // Always use the production asset in local dev, which is served from GCS. We tried to proxy and / or serve this
+    // in a better way in localhost, but it didn't work out. See b/328073416#comment8 for details.
+    const forceProdHost = window.location.hostname === "localhost";
+    lib.src = `${forceProdHost ? "https://www.kaggle.com" : ""}/static/mathjax/2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML`;
+    head.appendChild(lib);
+  });
+</script>
+
+
+
+
+
+
+</div>
+
+
+
+    <!-- Cheers, web-58d5b8f54f-52fdrp. -->
+
+  </main>
+</body>
+
+</html>
